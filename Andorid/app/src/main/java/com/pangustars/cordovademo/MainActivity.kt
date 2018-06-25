@@ -1,10 +1,12 @@
 package com.pangustars.cordovademo
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import com.pangustars.panguhybird.HybirdActivity
 
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -16,8 +18,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+            startActivity(Intent(this, HybirdActivity::class.java))
         }
     }
 
