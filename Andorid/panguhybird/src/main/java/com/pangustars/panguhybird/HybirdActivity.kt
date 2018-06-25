@@ -8,5 +8,6 @@ class HybirdActivity : CordovaActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        loadUrl("file:///android_asset/www/index.html")
     }
 }
