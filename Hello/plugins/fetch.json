@@ -6,5 +6,13 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "ToasID": {
+    "source": {
+      "type": "local",
+      "path": "/Volumes/DATA/Work/cordova/new-ver/CordovaDemo/Hello/node_modules/toast"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }
