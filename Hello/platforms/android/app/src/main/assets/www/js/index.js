@@ -44,3 +44,13 @@ var app = {
 };
 
 app.initialize();
+
+function onToast() {
+    cordova.plugins.Toast.coolMethod("Toast测试",0,onSuccess,onError);
+        function onSuccess(Data){
+            alert(JSON.stringify(Data));
+        }
+        function onError(Data){
+            alert(JSON.stringify(Data));
+        }
+}

@@ -1,5 +1,12 @@
 package com.pangustars.panguhybird.plugin;
 
+import android.widget.Toast;
+
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
+import org.json.JSONArray;
+import org.json.JSONException;
+
 public class ToastPlugin extends CordovaPlugin {
 
     public static final String  ACTION = "toast";
