@@ -22,4 +22,9 @@ public class ToastPlugin extends CordovaPlugin {
         }
         return true;
     }
+
+    @Override
+    public Boolean shouldAllowBridgeAccess(String url) {
+        return true;
+    }
 }
