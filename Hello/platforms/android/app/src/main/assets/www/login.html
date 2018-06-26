@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <title></title>
+</head>
+<body>
+
+    <script id="multiLanguageTpl" type="x-tmpl-mustache">
+        <div id="login">
+            <div class="inner">
+                <div class="item account">
+                    <span>{{lang.account}}</span>
+                    <div class="input-out"><input type="tel" maxlength="11" readonly></div>
+                </div>
+                <div class="item password">
+                    <span>{{lang.password}}</span>
+                    <div class="input-out"><input type="password"></div>
+                </div>
+            </div>
+            <div class="button"><span>{{lang.login}}</span></div>
+            <span class="forget">{{lang.forgetPassword}}</span>
+        </div>
+    </script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+</html>

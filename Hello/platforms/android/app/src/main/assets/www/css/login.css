@@ -1,0 +1,68 @@
+@import '../xp/ui.scss';
+
+/*登录*/
+#login {
+    padding-top: 40px;
+
+    .inner {
+        margin: 0 16px;
+
+        .item {
+            height: 53px;
+            box-sizing: border-box;
+            overflow: hidden;
+            @include border-1px(bottom, #d8d8d8, 1px);
+
+            span {
+                float: left;
+                width: 45px;
+                line-height: 52px;
+                text-align: center;
+                font-size: 16px;
+                color: #525866;
+            }
+            &.account {
+                span, input {
+                    color: #c8c8cc;
+                }
+            }
+            .input-out {
+                margin-left: 60px;
+                input {
+                    display: block;
+                    width: 100%;
+                    height: 52px;
+                    padding-right: 10px;
+                    border: none;
+                    box-sizing: border-box;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .button {
+        margin-top: 30px;
+        background: $xp-blue;
+        color: #fff;
+        font-size: 16px;
+
+        span {
+            opacity: 0.4;
+            letter-spacing: 5px;
+        }
+        &.active span {
+            opacity: 1;
+        }
+    }
+    .forget {
+        float: right;
+        margin: 15px 18px 0 0;
+        font-size: 15px;
+        color: #797C80;
+        text-decoration: none;
+
+        &:active {
+            color: $blue;
+        }
+    }
+}

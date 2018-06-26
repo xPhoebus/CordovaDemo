@@ -39,18 +39,36 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 
+
         console.log('Received Event: ' + id);
+
+        ReactDOM.render(
+            React.createElement('h1', {id: 'recipe', 'data-type': 'title'}, 'Hello World'),
+            document.getElementById("react")
+        );
     }
 };
 
 app.initialize();
 
+function log(str) {
+    ReactDOM.render(
+        React.createElement('h1', {id: 'recipe', 'data-type': 'title'}, str),
+        document.getElementById("log")
+    );
+}
+
 function onToast() {
-    cordova.plugins.Toast.coolMethod("Toast测试",0,onSuccess,onError);
+    cordova.plugins.Toast.coolMethod("Toast测试", onSuccess, onError);
         function onSuccess(Data){
-            alert(JSON.stringify(Data));
+            log(JSON.stringify(Data));
+            cordova.plugins.Toast.log(JSON.stringify(Data));
         }
         function onError(Data){
             alert(JSON.stringify(Data));
         }
+}
+
+function onLogin(url) {
+    cordova.plugins.Toast.openURL(url);
 }
